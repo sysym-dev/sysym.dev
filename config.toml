@@ -13,6 +13,7 @@ enableRobotsTXT = true
   description = 'Coding Stuffs, Notes, and Random Articles'
   authorName = 'Ibrahim Al Anshor'
   authorURL = 'https://ibrahimalanshor.github.io'
+  googleSiteVerification = 'LeQXvrWLrnsIYD3glynvhfiBr7PEYQNqqaQhI8vscBE'
 
 [taxonomies]
   tag = 'tags'
