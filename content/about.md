@@ -1,10 +1,10 @@
 ---
 title: About
-date: 2023-08-05
+date: 2023-08-06
 ---
 
-Dalam Airflow, penggunaan callback untuk menangani keberhasilan dan kesalahan tugas memberikan kemampuan untuk eksekusi tindakan pasca-tugas, meningkatkan responsibilitas alur kerja.
+Kumpulan Catatan Coding dan Berbagai Artikel Seputar Coding.
 
-<!--more-->
+Dibuat menggunakan [Hugo](https://gohugo.io/) dan [Tailwind CSS](https://tailwindcss.com/)
 
-Hal ini mengizinkan pelaksanaan aksi khusus setelah penyelesaian atau kegagalan, memperkuat pengawasan dan pengelolaan alur kerja secara efektif.
+Dari [Ibrahim Al Anshor](https://ibrahimalanshor.github.io).

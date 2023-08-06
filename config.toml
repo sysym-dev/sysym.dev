@@ -10,7 +10,7 @@ enableRobotsTXT = true
   noClasses = false
 
 [params]
-  description = 'Coding Stuffs, Notes, and Random Articles'
+  description = 'Kumpulan Catatan Coding dan Berbagai Artikel Seputar Coding'
   authorName = 'Ibrahim Al Anshor'
   authorURL = 'https://ibrahimalanshor.github.io'
   googleSiteVerification = 'LeQXvrWLrnsIYD3glynvhfiBr7PEYQNqqaQhI8vscBE'
