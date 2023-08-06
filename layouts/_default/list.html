@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ $paginator := (.Paginate .RegularPages 5) }}
+<main class="wrapper {{ if gt $paginator.TotalPages 1 }} pb-12 {{ end }}">
+    <div class="prose prose-sky mt-12 max-w-none">
+        <h1>{{ .Title }}</h1>
+        <hr>
+        {{ range $paginator.Pages }}
+            <article>
+                <p class="flex items-center gap-x-4">
+                    <span>{{ .Date.Format "January 2, 2006" }}</span>
+                    <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 fill-current text-sky-500">
+                        <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    {{ range .Params.tags }}
+                        <a href="/tags/{{ . }}">{{ . }}</a>
+                    {{ end }}
+                </p>
+                <a href="{{ .Permalink }}" class="no-underline">
+                    <h2 class="mt-0 mb-0">{{ .Title }}</h2>
+                </a>
+                <p>{{ .Summary }}</p>
+                <a href="{{ .Permalink }}">Read Full Post</a>
+                <hr>
+            </article>
+        {{ end }}
+    </div>
+    {{ template "_internal/pagination.html" $paginator }}
+</main>
+{{ end }}

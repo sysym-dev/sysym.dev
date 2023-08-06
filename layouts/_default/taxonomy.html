@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class="wrapper pb-12">
+    <div class="prose prose-sky prose-a:no-underline mt-12">
+        <h1>{{ .Title }}</h1>
+        <hr>
+        <div class="flex flex-wrap gap-2">
+            {{ range .Pages }}
+                <a href="{{ .Permalink }}" class="rounded-md bg-sky-800 px-2.5 py-1.5 text-sm font-semibold text-sky-100 shadow-sm hover:bg-sky-700">{{ .Title }}</a>
+            {{ end }}
+        </div>
+    </div>
+</main>
+{{ end }}

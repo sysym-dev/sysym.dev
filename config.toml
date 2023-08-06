@@ -1,0 +1,29 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'sysym.dev'
+enableRobotsTXT = true
+
+[permalinks]
+  posts = '/:title'
+
+[markup.highlight]
+  noClasses = false
+
+[params]
+  description = 'Coding Stuffs, Notes, and Random Articles'
+  authorName = 'Ibrahim Al Anshor'
+  authorURL = 'https://ibrahimalanshor.github.io'
+
+[taxonomies]
+  tag = 'tags'
+
+[menu]
+[[menu.main]]
+  name = 'About'
+  url = '/about/'
+[[menu.main]]
+  name = 'Posts'
+  pageRef = '/posts'
+[[menu.main]]
+  name = 'Tags'
+  pageRef = '/tags'

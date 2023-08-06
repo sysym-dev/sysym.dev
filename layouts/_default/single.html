@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="wrapper pb-12">
+    <div class="prose prose-sky mt-12">
+        <p class="flex items-center gap-x-4">
+            <span>{{ .Date.Format "January 2, 2006" }}</span>
+            <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 fill-current text-sky-500">
+                <circle cx="1" cy="1" r="1" />
+            </svg>
+            {{ range .Params.tags }}
+                <a href="/tags/{{ . }}">{{ . }}</a>
+            {{ end }}
+        </p>
+        <h1 class="mt-0">{{ .Title }}</h1>
+        {{ .Content }}
+        <hr>
+    </div>
+</article>
+{{ end }}
