@@ -1,6 +1,6 @@
 ---
 title: About
-date: 2023-08-06
+date: 2023-08-06 14:00:00 +0700
 ---
 
 Kumpulan Catatan Coding dan Berbagai Artikel Seputar Coding.
