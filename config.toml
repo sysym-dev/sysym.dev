@@ -1,4 +1,4 @@
-baseURL = 'https://sysym.dev'
+baseURL = 'https://sysym.dev/'
 languageCode = 'en-us'
 title = 'sysym.dev'
 enableRobotsTXT = true
