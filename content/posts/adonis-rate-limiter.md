@@ -1,7 +1,7 @@
 ---
 title: Adonis Js Rate Limiting Menggunakan Redis
 tags: [adonis]
-date: 2023-08-06 12:31:00 +0700
+date: 2023-08-07 11:31:00 +0700
 ---
 
 Rate limiting adalah pembatasan jumlah akses suatu endpoint di aplikasi dalam periode tertentu.

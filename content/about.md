@@ -11,7 +11,7 @@ Dari [Ibrahim Al Anshor](https://ibrahimalanshor.github.io).
 
 Hubungi Kami.
 
-- [info@sysym.dev](info@sysym.dev)
+- [info@sysym.dev](mailto:info@sysym.dev)
 - [https://github.com/sysym-dev](https://github.com/sysym-dev)
 - [https://twitter.com/sysym](https://twitter.com/sysym)
 - [https://instagram.com/sysym](https://instagram.com/sysym)
