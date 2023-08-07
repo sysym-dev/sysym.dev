@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://sysym.dev/'
 languageCode = 'en-us'
 title = 'sysym.dev'
 enableRobotsTXT = true
@@ -23,7 +23,7 @@ enableRobotsTXT = true
   url = '/about/'
 [[menu.main]]
   name = 'Posts'
-  pageRef = '/posts'
+  url = '/posts/'
 [[menu.main]]
   name = 'Tags'
-  pageRef = '/tags'
+  url = '/tags/'
