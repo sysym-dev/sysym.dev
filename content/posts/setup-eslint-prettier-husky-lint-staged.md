@@ -1,8 +1,7 @@
 ---
 title: Setup Eslint Prettier Husky dan Lint Staged
 tags: [linter, javascript]
-date: 2023-08-07 07:00:00 +0700
-draft: true
+date: 2023-08-08 17:00:00 +0700
 ---
 
 Ketika memulai sebuah proyek aplikasi javascript, saya biasa mengawalinya dengan setup eslint prettier husky dan lint staged.

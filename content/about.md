@@ -13,7 +13,7 @@ Hubungi Kami.
 
 - [info@sysym.dev](mailto:info@sysym.dev)
 - [https://github.com/sysym-dev](https://github.com/sysym-dev)
-- [https://twitter.com/sysym](https://twitter.com/sysym)
-- [https://instagram.com/sysym](https://instagram.com/sysym)
-- [https://facebook.com/sysym](https://facebook.com/sysym)
-- [https://youtube.com/sysym](https://youtube.com/sysym)
+- [https://twitter.com/sysym_dev](https://twitter.com/sysym_dev)
+- [https://www.facebook.com/sysym.dev](https://www.facebook.com/sysym.dev)
+<!-- - [https://instagram.com/sysym](https://instagram.com/sysym) -->
+<!-- - [https://youtube.com/sysym](https://youtube.com/sysym) -->
