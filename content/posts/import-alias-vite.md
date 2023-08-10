@@ -1,7 +1,7 @@
 ---
 title: Import Alias di Vite
 tags: [vite, vue]
-date: 2023-08-08 17:00:00 +0700
+date: 2023-08-09 17:00:00 +0700
 ---
 
 Pernahkah anda menemukan kode import file yang begitu panjang seperti ini?

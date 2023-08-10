@@ -1,8 +1,7 @@
 ---
 title: MySql Trigger Ketika Ada Kolom Yang Diperbarui
 tags: [mysql]
-date: 2023-08-08 18:00:00 +0700
-draft: true
+date: 2023-08-10 18:00:00 +0700
 ---
 
 Trigger adalah objek berisi statement SQL yang otomatis dijalankan pada event terentu yang terjadi pada suatu tabel.
