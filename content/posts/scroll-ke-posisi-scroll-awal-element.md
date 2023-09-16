@@ -1,6 +1,6 @@
 ---
 title: Scroll Element Ke Posisi Paling Atas
-tags: [typeorm]
+tags: [javascript]
 date: 2023-09-13 20:00:00 +0700
 ---
 

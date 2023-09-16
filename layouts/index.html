@@ -8,8 +8,8 @@
 <nav class="bg-sky-900 py-4 text-sky-100 overflow-x-auto overflow-y-hidden">
     <div class="wrapper">
         <ul class="flex gap-x-2">
-            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                <li><a href="/tags/{{ $name }}" class="rounded-md bg-sky-800 px-2.5 py-1.5 text-sm font-semibold text-sky-100 shadow-sm hover:bg-sky-700">{{ $name }}</a></li>
+            {{ range first 10 (.Site.Taxonomies.tags.ByCount) }}
+                <li><a href="{{ .Page.Permalink }}" class="rounded-md bg-sky-800 px-2.5 py-1.5 text-sm font-semibold text-sky-100 shadow-sm hover:bg-sky-700">{{ .Page.Title }}</a></li>
             {{ end }}
         </ul>
     </div>
