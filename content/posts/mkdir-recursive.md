@@ -1,23 +1,51 @@
 ---
-title: Membuat Direktori di Linux Secara Rekursif
-tags: [linux]
-date: 2023-10-31 18:00:00 +0700
+title: Tes Koneksi Knex Ke Database
+tags: [knex]
+date: 2023-11-02 12:00:00 +0700
 ---
 
-Membuat direktori di linux bisa dilakukan dengan perintah `mkdir`.
+Tes koneksi ke database terkadang perlu dilakukan salah satunya untuk memastikan konfigurasi koneksi database sudah benar.
 
 <!--more-->
 
-```bash
-mkdir project
+Di `knex` salah satu cara untuk mengetes koneksi ke database adalah dengan membuat *dummy query*.
+
+```javascript
+db.raw('SELECT 1')
 ```
 
-Jika ingin membuat direktori secara rekursif beserta *children*-nya secara bersamaan dalam satu perintah, tambahkan opsi `-p` / `--parents` pada perintah `mkdir`.
+Jika gagal berarti mungkin ada masalah pada konfigurasi koneksi database. Jika berhasil kemudian bisa jalankan server atau yang lainnya.
 
-```bash
-mkdir -p project/web/src
-# atau
-mkdir --parents project/web/src
+```javascript
+const knex = require('knex')
+
+const db = knex({
+    client: 'mysql2',
+    connection: {
+        host: 'localhost',
+        port: 3306,
+        user: 'root',
+        password: 'password'
+    }
+})
+
+async function connectDb() {
+    await db.raw('SELECT 1')
+
+    console.log('database connected')
+}
+
+async function start() {
+    try {
+        await connectDb()
+
+        // start server or something
+    } catch (err) {
+        console.error(err)
+
+        process.exit(1)
+    }
+}
+
+start()
 ```
-
-Pada perintah diatas `mkdir` akan membuat direktori `project`, di dalamnya ada direktori `web`, di dalamnya lagi ada `src`.
