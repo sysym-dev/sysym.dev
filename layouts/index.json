@@ -1,9 +1,11 @@
 {
-    "post" : [
+    "posts" : [
         {{ range $i, $post := .Site.RegularPages -}}
         {
             "url" : "{{ .Permalink }}",
             "title" : "{{ .Title }}",
+            "date" : {{ .Date.Format "January 2, 2006" | plainify | jsonify }},
+            "summary" : {{ .Summary | plainify | jsonify }},
             "content": {{ .Content | plainify | jsonify }}
         }{{ with lt $i (sub (.Site.RegularPages | len) 1) }},{{ end }}
         {{ end -}}
