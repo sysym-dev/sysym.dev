@@ -1,0 +1,11 @@
+{
+    "post" : [
+        {{ range $i, $post := .Site.RegularPages -}}
+        {
+            "url" : "{{ .Permalink }}",
+            "title" : "{{ .Title }}",
+            "content": {{ .Content | plainify | jsonify }}
+        }{{ with lt $i (sub (.Site.RegularPages | len) 1) }},{{ end }}
+        {{ end -}}
+    ]
+}

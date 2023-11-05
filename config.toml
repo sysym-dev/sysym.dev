@@ -27,3 +27,6 @@ enableRobotsTXT = true
 [[menu.main]]
   name = 'Tags'
   url = '/tags/'
+
+[outputs]
+  home = ['html', 'json', 'rss']
