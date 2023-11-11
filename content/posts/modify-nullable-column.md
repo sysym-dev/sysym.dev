@@ -1,6 +1,6 @@
 ---
 title: Cara Modifikasi NULL Kolom Yang Sudah Ada Pada MySQL atau Dengan Laravel
-tags: [vue]
+tags: [mysql, laravel]
 date: 2023-10-08 18:00:00 +0700
 ---
 

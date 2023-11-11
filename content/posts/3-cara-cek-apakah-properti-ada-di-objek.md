@@ -1,6 +1,6 @@
 ---
 title: 3 Cara Cek Apakah Properti Ada Pada Objek Javascript
-tags: [js]
+tags: [javascript]
 date: 2023-09-21 17:31:00 +0700
 ---
 
