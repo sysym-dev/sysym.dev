@@ -6,6 +6,8 @@ date: 2023-12-03 10:00:00 +0700
 
 Jumlah hari dalam 1 bulan dapat dihitung di javascript dengan `Date` objek.
 
+<!--more-->
+
 Misal saya ingin menghitung jumlah hari di bulan desember tahun 2023.
 
 ```js
