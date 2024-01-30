@@ -1,6 +1,6 @@
 ---
 title: Cara Validasi Konfirmasi Password Menggunakan Joi dan Yup
-tags: [javascript, joi, yup]
+tags: [joi, yup]
 date: 2024-01-21 10:00:00 +0700
 summary: Ref yang ada di child component yang menggunakan `<script setup>` atau *composition api* harus di-*expose* dulu menggunakan `defineExpose` agar bisa diakses dari luar component.
 ---
