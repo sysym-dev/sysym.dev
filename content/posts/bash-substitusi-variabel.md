@@ -3,7 +3,7 @@ title: Cara Substitusi Variabel di Bash
 tags: [bash]
 date: 2024-02-13 10:00:00 +0700
 images:
-- /images/posts/curl-upload-file/thumbnail.jpg
+- /images/posts/variable-substitution-bash/thumbnail.jpg
 ---
 
 Substitusi variabel adalah cara untuk mereferensikan sebuah variabel untuk digunakan nilainya di operasi / perintah tertentu.
