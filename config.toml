@@ -6,8 +6,22 @@ enableRobotsTXT = true
 [permalinks]
   posts = '/:title'
 
-[markup.highlight]
-  noClasses = false
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    tabWidth = 2
+    pygmentsCodeFences = true
+    pygmentsUseClasses = true
 
 [params]
   description = 'Kumpulan Catatan Coding dan Berbagai Artikel Seputar Coding'

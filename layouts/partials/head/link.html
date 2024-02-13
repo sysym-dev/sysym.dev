@@ -7,3 +7,6 @@
 {{ with resources.Get "css/style.css" | postCSS }}
 <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{ end }}
+{{ with resources.Get "css/syntax.css" | postCSS }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
