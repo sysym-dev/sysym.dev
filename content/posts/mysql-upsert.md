@@ -1,6 +1,6 @@
 ---
-title: Cara Melakukan MySQL Upsert
-tags: [javascript]
+title: Cara Melakukan Upsert di MySQL
+tags: [mysql]
 date: 2024-07-22 21:00:00 +0700
 images:
 - /images/posts/mysql-upsert/thumbnail.jpg
