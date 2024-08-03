@@ -80,22 +80,22 @@ return [
         ],
         'mysql_1' => [
             'driver' => 'mysql',
-            'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', '')
+            'url' => env('DB_1_URL'),
+            'host' => env('DB_1_HOST', '127.0.0.1'),
+            'port' => env('DB_1_PORT', '3306'),
+            'database' => env('DB_1_DATABASE', 'laravel'),
+            'username' => env('DB_1_USERNAME', 'root'),
+            'password' => env('DB_1_PASSWORD', '')
             // dll
         ],
         'mysql_2' => [
             'driver' => 'mysql',
-            'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', '')
+            'url' => env('DB_2_URL'),
+            'host' => env('DB_2_HOST', '127.0.0.1'),
+            'port' => env('DB_2_PORT', '3306'),
+            'database' => env('DB_2_DATABASE', 'laravel'),
+            'username' => env('DB_2_USERNAME', 'root'),
+            'password' => env('DB_2_PASSWORD', '')
             // dll
         ],
     ]
