@@ -1,6 +1,6 @@
 ---
 title: Melanjutkan Nomor Urut Iterasi di Halaman Selanjutnya Pada Pagination
-tags: [vue, javascript, ]
+tags: [vue, javascript]
 date: 2023-11-11 10:30:00 +0700
 ---
 
