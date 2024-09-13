@@ -6,11 +6,16 @@
 </head>
 
 <body>
-    {{ partial "navbar.html" . }}
 
-    {{ block "main" . }}{{ end }}
+    <div class="min-h-screen flex flex-col justify-between">
+        <div class="w-full">
+            {{ partial "navbar.html" . }}
+            {{ block "main" . }}{{ end }}
+        </div>
 
-    {{ partial "footer.html" . }}
+        {{ partial "footer.html" . }}
+    </div>
+
     {{ partial "script.html" . }}
 
     {{ block "script" . }}{{ end }}
