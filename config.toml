@@ -33,14 +33,27 @@ enableRobotsTXT = true
 
 [menu]
 [[menu.main]]
-  name = 'About'
-  url = '/about/'
-[[menu.main]]
   name = 'Posts'
   url = '/posts/'
 [[menu.main]]
   name = 'Tags'
   url = '/tags/'
+[[menu.main]]
+  name = 'Projects'
+  url = '/projects/'
+[[menu.footer]]
+  name = 'About'
+  url = '/about/'
+[[menu.footer]]
+  name = 'Github'
+  url = 'http://github.com/sysym-dev'
+  [menu.footer.params]
+    target = '_blank'
+[[menu.footer]]
+  name = 'Twitter'
+  url = 'https://twitter.com/sysym_dev'
+  [menu.footer.params]
+    target = '_blank'
 
 [outputs]
   home = ['html', 'json', 'rss']
