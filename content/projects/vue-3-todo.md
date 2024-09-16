@@ -10,7 +10,7 @@ images:
 - [Link Project : https://sysym-dev.github.io/todo](https://sysym-dev.github.io/todo)
 - [Source code : https://github.com/sysym-dev/todo](https://github.com/sysym-dev/todo)
 
-Dibuat dengan Vue 3 dan Tailwindcss.
+Dibuat dengan Vue 3 dan Tailwindcss. Data disimpan di localstorage browser.
 
 Fitur:
 
