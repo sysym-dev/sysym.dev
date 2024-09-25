@@ -7,7 +7,7 @@ images:
 
 ![Aplikasi Countdown Dengan Vue 3](/images/projects/countdown-vue-3/screenshot.png)
 
-- [Link Project : https://sysym-dev.github.io/countdown](https://sysym-dev.github.io/countdown)
-- [Source code : https://github.com/sysym-dev/countdown](https://github.com/sysym-dev/countdown)
+- Link Project : [https://sysym-dev.github.io/countdown](https://sysym-dev.github.io/countdown)
+- Source code : [https://github.com/sysym-dev/countdown](https://github.com/sysym-dev/countdown)
 
 Dibuat dengan Vue 3 dan Tailwindcss. Data disimpan di localstorage browser.
