@@ -13,7 +13,7 @@ Untuk memvalidasi minimal dan maksimal pada date di zod, gunakan method `min` da
 - `min` untuk menentukan minimal tanggal
 - `max` untuk menentukan maksimal tanggal
 
-Contoh validasi tanggal minimal 1 Januari 2000 maksimal 31 Desember 2005;
+Contoh validasi tanggal minimal 1 Januari 2000 maksimal 31 Desember 2005:
 
 ```js
 import { z } from "zod";
@@ -61,8 +61,11 @@ const date = z
   .max(new Date('2005-12-31'))
 
 console.log( date.safeParse('1999-12-31') )
+// { success: false, error: [Getter] }
 console.log( date.safeParse('2006-01-01') )
+// { success: false, error: [Getter] }
 console.log( date.safeParse('2003-10-10') )
+// { success: true, data: 2003-10-10T00:00:00.000Z }
 ```
 
 Referensi:
