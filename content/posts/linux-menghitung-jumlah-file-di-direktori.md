@@ -35,7 +35,7 @@ $ ls -A1 /etc | wc -l
 281
 ```
 
-## Menggunakan Perintah find dan wc
+## 2. Menggunakan Perintah find dan wc
 
 Jika ingin dihitung jumlah file di dalam direktori sampai ke subdirektorinya, gunakan perintah `find`.
 
