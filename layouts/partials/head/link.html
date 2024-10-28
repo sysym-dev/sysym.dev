@@ -4,9 +4,4 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-{{ with resources.Get "css/style.css" | postCSS }}
-<link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }}
-{{ with resources.Get "css/syntax.css" | postCSS }}
-<link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
