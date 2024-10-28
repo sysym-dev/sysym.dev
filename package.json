@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "css:dev": "postcss assets/css/style.css -o static/css/style.css -w"
+  },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
