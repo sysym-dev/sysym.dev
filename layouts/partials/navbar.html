@@ -1,4 +1,4 @@
-<nav class="bg-sky-900 py-4 text-sky-100">
+<!-- <nav class="bg-sky-900 py-4 text-sky-100">
     <div class="max-w-[65ch] mx-auto px-4 md:px-0 flex items-center justify-between relative">
         <a class="font-bold" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         <div class="flex items-center gap-x-2">
@@ -44,4 +44,15 @@
             </ul>
         </div>
     </div>
+</nav> -->
+
+<nav class="max-w-prose w-full mx-auto h-16 flex items-center justify-between">
+    <a class="font-bold text-lg text-gray-900" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <ul class="flex items-center gap-8 text-gray-700">
+        {{ range .Site.Menus.main }}
+            <li>
+                <a href="" class="hover:text-gray-900 hover:underline">{{ .Name }}</a>
+            </li>
+        {{ end }}
+    </ul>
 </nav>

@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Lato', ...defaultTheme.fontFamily.sans],
+        'sans': ['PT Sans', ...defaultTheme.fontFamily.sans],
       },
       typography: ({ theme }) => ({
         sky: {

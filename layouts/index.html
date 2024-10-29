@@ -1,5 +1,5 @@
 {{ define "main" }}
-<header class="py-16 bg-sky-800 text-sky-100">
+<!-- <header class="py-16 bg-sky-800 text-sky-100">
     <div class="max-w-[65ch] mx-auto px-4 md:px-0">
         <h1 class="font-bold tracking-tight text-4xl text-white">{{ .Site.Title }}</h1>
         <p class="mt-2 text-lg">{{ .Site.Params.description }}</p>
@@ -38,5 +38,42 @@
         {{ end }}
     </div>
     {{ template "_internal/pagination.html" $paginator }}
-</main>
+</main> -->
+
+<div class="prose mx-auto py-16">
+    <header>
+        <h1>{{ .Site.Title }}</h1>
+        <p class="lead">{{ .Site.Params.description }}</p>
+    </header>
+
+    <hr>
+    
+    <main>
+        <section>
+            <h2>Recent Articles</h2>
+
+            <div class="flex flex-col divide-y">
+                {{ range (first 5 (where .Site.RegularPages "Section" "posts")) }}
+                    <div class="flex gap-4 py-2.5">
+                        <span class="text-gray-400 w-24 shrink-0">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        <a href="" class="no-underline hover:underline">{{ .Title }}</a>
+                    </div>
+                {{ end }}
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Articles</h2>
+
+            <div class="flex flex-col divide-y">
+                {{ range (first 5 (where .Site.RegularPages "Section" "posts")) }}
+                    <div class="flex gap-4 py-2.5">
+                        <span class="text-gray-400 w-24 shrink-0">{{ index .Params.Tags 0 }}</span>
+                        <a href="" class="no-underline hover:underline">{{ .Title }}</a>
+                    </div>
+                {{ end }}
+            </div>
+        </section>
+    </main>
+</div>
 {{ end }}
