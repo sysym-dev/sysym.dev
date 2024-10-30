@@ -68,7 +68,46 @@
             <div class="flex flex-col divide-y">
                 {{ range (first 5 (where .Site.RegularPages "Section" "posts")) }}
                     <div class="flex gap-4 py-2.5">
-                        <span class="text-gray-400 w-24 shrink-0">{{ index .Params.Tags 0 }}</span>
+                        <span class="text-gray-400 w-24 shrink-0">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        <a href="" class="no-underline hover:underline">{{ .Title }}</a>
+                    </div>
+                {{ end }}
+            </div>
+        </section>
+
+        <section>
+            <h2>Explore Tags</h2>
+
+            <div class="flex flex-col divide-y">
+                {{ range (first 5 (where .Site.RegularPages "Section" "posts")) }}
+                    <div class="flex gap-4 py-2.5">
+                        <span class="text-gray-400 w-24 shrink-0">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        <a href="" class="no-underline hover:underline">{{ .Title }}</a>
+                    </div>
+                {{ end }}
+            </div>
+        </section>
+
+        <section>
+            <h2>Products & Projects</h2>
+
+            <div class="flex flex-col divide-y">
+                {{ range (first 5 (where .Site.RegularPages "Section" "posts")) }}
+                    <div class="flex gap-4 py-2.5">
+                        <span class="text-gray-400 w-24 shrink-0">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        <a href="" class="no-underline hover:underline">{{ .Title }}</a>
+                    </div>
+                {{ end }}
+            </div>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+
+            <div class="flex flex-col divide-y">
+                {{ range (first 5 (where .Site.RegularPages "Section" "posts")) }}
+                    <div class="flex gap-4 py-2.5">
+                        <span class="text-gray-400 w-24 shrink-0">{{ .Date.Format "Jan 2, 2006" }}</span>
                         <a href="" class="no-underline hover:underline">{{ .Title }}</a>
                     </div>
                 {{ end }}
