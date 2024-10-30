@@ -38,9 +38,6 @@ enableRobotsTXT = true
 [[menu.main]]
   name = 'Tags'
   url = '/tags/'
-[[menu.main]]
-  name = 'Projects'
-  url = '/projects/'
 [[menu.footer]]
   name = 'About'
   url = '/about/'

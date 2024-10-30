@@ -7,10 +7,13 @@
 
 <body>
 
-    <div class="min-h-screen flex flex-col justify-between">
+    <div class="prose mx-auto min-h-screen flex flex-col justify-between px-4 md:px-0">
         <div class="w-full">
             {{ partial "navbar.html" . }}
-            {{ block "main" . }}{{ end }}
+
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
         </div>
 
         {{ partial "footer.html" . }}

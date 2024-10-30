@@ -1,14 +1,7 @@
-<footer class="bg-sky-900 py-4 text-sky-100">
-    <div class="max-w-[65ch] mx-auto px-4 md:px-0">
-        <ul class="flex gap-2">
-            {{ range .Site.Menus.footer }}
-                <li>
-                    <a href="{{ .URL }}"
-                        target="{{ .Params.target }}"
-                        class="px-2.5 py-1.5 text-sm font-semibold block rounded-md inline shadow-sm hover:bg-sky-700 ">{{
-                        .Name }}</a>
-                </li>
-            {{ end }}
-        </ul>
+<footer class="border-t">
+    <div class="h-16 flex items-center gap-8">
+        {{ range .Site.Menus.footer }}
+            <a href="" class="no-underline hover:underline">{{ .Name }}</a>
+        {{ end }}
     </div>
 </footer>

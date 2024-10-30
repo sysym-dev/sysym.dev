@@ -1,5 +1,5 @@
 {{ define "main" }}
-<header class="py-16 bg-sky-800 text-sky-100">
+<!-- <header class="py-16 bg-sky-800 text-sky-100">
     <div class="max-w-[65ch] mx-auto px-4 md:px-0">
         <h1 class="font-bold tracking-tight text-4xl text-white">{{ .Site.Title }}</h1>
         <p class="mt-2 text-lg">{{ .Site.Params.description }}</p>
@@ -38,5 +38,47 @@
         {{ end }}
     </div>
     {{ template "_internal/pagination.html" $paginator }}
-</main>
+</main> -->
+<div class="py-16">
+    <header>
+        <h1>sysysm.dev</h1>
+        <p class="lead">{{ .Site.Params.description }}</p>
+    </header>
+    
+    <hr class="mb-0">
+    
+    <section>
+        <h2>Featured Posts</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+            {{ range first 4 (where .Site.RegularPages "Section" "posts") }}
+                <div class="border p-4 rounded-lg space-y-2">
+                    <img src="{{ index .Params.images 0 }}" class="sm:max-h-32 w-full object-cover sm:h-full m-0 rounded-md">
+                    <div>
+                        <p class="m-0"><small class="text-gray-500">22 Mei 2024</small></p>
+                        <p class="mt-0">
+                            <a href="" class="no-underline hover:underline"><strong>{{ .Title }}</strong></a>
+                        </p>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </section>
+    
+    <section>
+        <h2>Recent Posts</h2>
+        <div class="divide-y">
+            {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
+                <div class="flex py-2 sm:gap-2 flex-col sm:flex-row">
+                    <span class="w-24 shrink-0 text-gray-500 text-sm sm:text-base">{{ .Date.Format "Jan 2 2006" }}</span>
+                    <a href="" class="no-underline hover:underline">{{ .Title }}</a>
+                </div>
+            {{ end }}
+        </div>
+        <p>
+            <a href="">
+                View All Posts
+            </a>
+        </p>
+    </section>
+</div>
 {{ end }}
