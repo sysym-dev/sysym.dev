@@ -3,6 +3,8 @@
     "css:dev": "postcss assets/css/style.css -o static/css/style.css -w"
   },
   "devDependencies": {
+    "@iconify-json/logos": "^1.2.3",
+    "@iconify-json/skill-icons": "^1.2.0",
     "@iconify/tailwind": "^1.1.3",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",

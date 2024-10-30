@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const { addIconSelectors } = require('@iconify/tailwind');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -54,5 +55,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
+    addIconSelectors(['logos']),
   ],
 }
