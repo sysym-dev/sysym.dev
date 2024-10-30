@@ -2,7 +2,7 @@
     <a href="{{ .Site.BaseURL }}" class="font-bold text-lg">{{ .Site.Title }}</a>
     <div class="flex gap-8">
         {{ range .Site.Menus.main }}
-            <a href="" class="no-underline hover:underline">{{ .Name }}</a>
+            <a href="{{ .URL }}" class="no-underline hover:underline">{{ .Name }}</a>
         {{ end }}
         <a href="/search"
             class="no-underline hover:underline">

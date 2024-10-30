@@ -1,47 +1,7 @@
 {{ define "main" }}
-<!-- <header class="py-16 bg-sky-800 text-sky-100">
-    <div class="max-w-[65ch] mx-auto px-4 md:px-0">
-        <h1 class="font-bold tracking-tight text-4xl text-white">{{ .Site.Title }}</h1>
-        <p class="mt-2 text-lg">{{ .Site.Params.description }}</p>
-    </div>
-</header>
-<nav class="bg-sky-900 py-4 text-sky-100 overflow-x-auto overflow-y-hidden">
-    <div class="max-w-[65ch] mx-auto px-4 md:px-0">
-        <ul class="flex gap-x-2">
-            {{ range first 10 (.Site.Taxonomies.tags.ByCount) }}
-                <li><a href="{{ .Page.Permalink }}" class="rounded-md bg-sky-800 px-2.5 py-1.5 text-sm font-semibold text-sky-100 shadow-sm hover:bg-sky-700">{{ .Page.Title }}</a></li>
-            {{ end }}
-        </ul>
-    </div>
-</nav>
-{{ $paginator := (.Paginate (where .Site.RegularPages "Section" "posts") 5) }}
-<main class="max-w-[65ch] mx-auto px-4 md:px-0 {{ if gt $paginator.TotalPages 1 }} pb-12 {{ end }}">
-    <div class="prose prose-sky mt-12 max-w-none">
-        {{ range $paginator.Pages }}
-            <article>
-                <p class="flex items-center gap-x-4">
-                    <span>{{ .Date.Format "January 2, 2006" }}</span>
-                    <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 fill-current text-sky-500">
-                        <circle cx="1" cy="1" r="1" />
-                    </svg>
-                    {{ range .Params.tags }}
-                        <a href="/tags/{{ . }}">{{ . }}</a>
-                    {{ end }}
-                </p>
-                <a href="{{ .Permalink }}" class="no-underline">
-                    <h2 class="mt-0 mb-0">{{ .Title }}</h2>
-                </a>
-                <p>{{ .Summary }}</p>
-                <a href="{{ .Permalink }}">Read Full Post</a>
-                <hr>
-            </article>
-        {{ end }}
-    </div>
-    {{ template "_internal/pagination.html" $paginator }}
-</main> -->
 <div class="py-16">
     <header>
-        <h1>sysysm.dev</h1>
+        <h1>{{ .Site.Title }}</h1>
         <p class="lead">{{ .Site.Params.description }}</p>
     </header>
     
@@ -51,15 +11,15 @@
         <h2>Featured Posts</h2>
         <div class="grid sm:grid-cols-2 gap-4">
             {{ range first 4 (where .Site.RegularPages "Section" "posts") }}
-                <div class="border p-4 rounded-lg space-y-2">
-                    <img src="{{ index .Params.images 0 }}" class="sm:max-h-32 w-full object-cover sm:h-full m-0 rounded-md">
-                    <div>
-                        <p class="m-0"><small class="text-gray-500">22 Mei 2024</small></p>
-                        <p class="mt-0">
-                            <a href="" class="no-underline hover:underline"><strong>{{ .Title }}</strong></a>
-                        </p>
+                <article class="border p-4 rounded-lg space-y-2">
+                    <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" class="sm:max-h-32 w-full object-cover sm:h-full m-0 rounded-md">
+                    <div class="flex flex-col">
+                        <time class="text-gray-500">
+                            <small>22 Mei 2024</small>
+                        </time>
+                        <a href="{{ .Permalink }}" class="no-underline hover:underline"><strong>{{ .Title }}</strong></a>
                     </div>
-                </div>
+                </article>
             {{ end }}
         </div>
     </section>
@@ -68,14 +28,14 @@
         <h2>Recent Posts</h2>
         <div class="divide-y">
             {{ range first 10 (where .Site.RegularPages "Section" "posts") }}
-                <div class="flex py-2 sm:gap-2 flex-col sm:flex-row">
-                    <span class="w-24 shrink-0 text-gray-500 text-sm sm:text-base">{{ .Date.Format "Jan 2 2006" }}</span>
-                    <a href="" class="no-underline hover:underline">{{ .Title }}</a>
-                </div>
+                <article class="flex py-2 sm:gap-2 flex-col sm:flex-row">
+                    <time class="w-24 shrink-0 text-gray-500 text-sm sm:text-base order-last sm:order-first">{{ .Date.Format "Jan 2 2006" }}</time>
+                    <a href="{{ .Permalink }}" class="no-underline hover:underline">{{ .Title }}</a>
+                </article>
             {{ end }}
         </div>
         <p>
-            <a href="">
+            <a href="/posts">
                 View All Posts
             </a>
         </p>

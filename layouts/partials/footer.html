@@ -1,7 +1,7 @@
 <footer class="border-t">
     <div class="h-16 flex items-center gap-8">
         {{ range .Site.Menus.footer }}
-            <a href="" class="no-underline hover:underline">{{ .Name }}</a>
+            <a href="{{ .URL }}" target="{{ .Params.Target }}" class="no-underline hover:underline">{{ .Name }}</a>
         {{ end }}
     </div>
 </footer>
