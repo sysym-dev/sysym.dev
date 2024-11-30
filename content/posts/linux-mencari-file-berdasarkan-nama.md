@@ -12,7 +12,7 @@ Untuk mencari file berdasarkan nama di linux, kita dapat menggunakan perintah `f
 
 1. Jalankan perintah `find`
 2. Tambahkan opsi `-type` dengan argumen `f`
-3. Tambahkan opsi `-name` diikuti nama filenya. Atau `-iname` jikang ingin mengabaikan huruf besar atau kecil pada nama file.
+3. Tambahkan opsi `-name` diikuti nama filenya. Atau `-iname` jika ingin mengabaikan huruf besar atau kecil pada nama file.
 
 Contoh mencari file yang namanya "laporan.pdf".
 
