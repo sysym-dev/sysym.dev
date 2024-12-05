@@ -1,0 +1,11 @@
+<!-- Google tag (gtag.js) -->
+{{ if ne .Site.BaseURL "http://localhost:1313/" }}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REVKB7M8CS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-REVKB7M8CS');
+</script>
+{{ end }}
