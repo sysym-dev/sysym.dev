@@ -1,6 +1,6 @@
 ---
 title: Cara Membuat Pagination Di MongoDB Dengan $facet
-tags: [zod]
+tags: [mongodb]
 date: 2024-10-17 21:00:00 +0700
 images:
 - /images/posts/mongodb-facet/thumbnail.jpg
