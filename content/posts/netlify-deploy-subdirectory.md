@@ -6,7 +6,7 @@ images:
 - /images/posts/netlify-deploy-subdirektori/thumbnail.jpg
 ---
 
-Ini adalah cara saya men-deploy 2 situs Netlify, yaitu `1001-tools` dan `todo`. Kedua situs tersebut itu ingin saya deploy ke subdirektori dari situs netlify Utama, yaitu `sysysm.dev`.
+Ini adalah cara saya men-deploy 2 situs Netlify, yaitu `1001-tools` dan `todo`. Kedua situs tersebut itu ingin saya deploy ke subdirektori dari situs netlify Utama, yaitu `sysym.dev`.
 
 <!--more-->
 
@@ -14,12 +14,12 @@ Awalnya, `1001-tools` alamat deploynya adalah `1001-tools.netlify.app` dan `todo
 
 Nantinya, kedua situs tersebut akan dapat diakses dengan alamat berikut:
 
-- `1001-tools` -> `sysysm.dev/1001-tools`
-- `todo` -> `sysysm.dev/todo`
+- `1001-tools` -> `sysym.dev/1001-tools`
+- `todo` -> `sysym.dev/todo`
 
 Di netlify, untuk deploy ke subdirektori dapat dilakukan dengan membuat proxy yang mengarahkan path tertentu ke situs Netlify lain.
 
-Caranya,  tambahkan file `_redirects` di root direktori situs utama, dalam hal ini di `sysysm.dev`. File ini berisi daftar path subdirektori dan tujuannya.
+Caranya,  tambahkan file `_redirects` di root direktori situs utama, dalam hal ini di `sysym.dev`. File ini berisi daftar path subdirektori dan tujuannya.
 
 Syntax.
 
