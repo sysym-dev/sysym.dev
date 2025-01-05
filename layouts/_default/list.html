@@ -25,5 +25,6 @@
         {{ end }}
     </div>
     {{ template "_internal/pagination.html" $paginator }}
+    {{ partial "popular-post.html" . }}
 </main>
 {{ end }}

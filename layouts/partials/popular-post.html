@@ -1,0 +1,11 @@
+<div class="p-6 bg-neutral-100 mt-12 rounded-lg space-y-2">
+    <h2 class="font-bold text-sky-900 text-xl">Postingan Populer</h2>
+
+    <ul class="space-y-1 list-decimal ml-4 text-neutral-900">
+        {{ range sort (where .Site.RegularPages "Params.popular" true) "Params.popularOrder" "asc" }}
+        <li class="pl-1">
+            <a href="{{ .Permalink }}" class="hover:underline">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
