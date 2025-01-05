@@ -4,6 +4,8 @@ tags: [netlify]
 date: 2025-01-05 04:20:00 +0700
 images:
 - /images/posts/netlify-deploy-subdirektori/thumbnail.jpg
+popular: true
+popularOrder: 4
 ---
 
 Ini adalah cara saya men-deploy 2 situs Netlify, yaitu `1001-tools` dan `todo`. Kedua situs tersebut itu ingin saya deploy ke subdirektori dari situs netlify Utama, yaitu `sysym.dev`.

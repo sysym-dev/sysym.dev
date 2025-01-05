@@ -4,6 +4,8 @@ tags: [javascript]
 date: 2024-11-14 20:20:00 +0700
 images:
 - /images/posts/js-input-file-image-preview/thumbnail.jpg
+popular: true
+popularOrder: 3
 ---
 
 Pada artikel ini saya akan membahas tentang cara menampilkan preview gambar dari input file dengan javascript. Berikut caranya:

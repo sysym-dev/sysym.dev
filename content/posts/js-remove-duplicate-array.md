@@ -4,6 +4,8 @@ tags: [javascript]
 date: 2024-08-03 20:30:00 +0700
 images:
 - /images/posts/js-remove-duplicate-array/thumbnail.jpg
+popular: true
+popularOrder: 2
 ---
 
 Untuk menghapus elemen array yang duplikat di javascript, caranya bisa dengan mengecek setiap elemen di array apakah indexnya sama dengan index elemen pertama di array yang nilainya sama dengan elemen yang sedang dicek.
