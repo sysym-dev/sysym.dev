@@ -37,3 +37,5 @@ Contoh.
 ```
 
 Deploy ulang situs utama (`sysym.dev`). Kemudian coba akses ke subdirektori yang telah ditambahkan, seharusnya akan diarahkan ke situs Netlify lain sesuai yang ditentukan di file `_redirects`.
+
+Sumber : https://docs.netlify.com/routing/redirects/rewrites-proxies
