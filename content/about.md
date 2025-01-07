@@ -1,5 +1,5 @@
 ---
-title: About
+title: Tentang Kami
 date: 2023-08-06 14:00:00 +0700
 ---
 

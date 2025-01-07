@@ -1,4 +1,4 @@
 ---
-title: 'Posts'
-description: 'All Posts'
+title: 'Daftar Postingan'
+description: 'Daftar Postingan'
 ---
