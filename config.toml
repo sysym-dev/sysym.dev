@@ -1,5 +1,6 @@
 baseURL = 'https://sysym.dev/'
 languageCode = 'id-ID'
+defaultContentLanguage = "id"
 title = 'sysym.dev'
 enableRobotsTXT = true
 
@@ -33,17 +34,18 @@ enableRobotsTXT = true
 
 [menu]
 [[menu.main]]
-  name = 'Posts'
+  name = 'Postingan'
   url = '/posts/'
 [[menu.main]]
-  name = 'Tags'
+  name = 'Tag'
   url = '/tags/'
 [[menu.main]]
-  name = 'Projects'
+  name = 'Proyek'
   url = '/projects/'
 [[menu.footer]]
-  name = 'About'
+  name = 'Tentang'
   url = '/about/'
+  weight = 3
 [[menu.footer]]
   name = 'Github'
   url = 'http://github.com/sysym-dev'
