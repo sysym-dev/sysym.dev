@@ -37,7 +37,7 @@
             </article>
         {{ end }}
     </div>
-    {{ template "_internal/pagination.html" $paginator }}
+    {{ template "_internal/pagination.html" (dict "paginator" $paginator "context" .) }}
     {{ partial "popular-post.html" . }}
 </main>
 {{ end }}
