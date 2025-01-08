@@ -36,6 +36,10 @@ enableRobotsTXT = true
 [[menu.main]]
   name = 'Postingan'
   url = '/posts/'
+  weight = 3
+[[menu.main]]
+  name = 'Arsip'
+  url = '/archives/'
 [[menu.main]]
   name = 'Tag'
   url = '/tags/'
