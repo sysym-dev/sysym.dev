@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="max-w-prose mx-auto px-4 md:px-0">
+    <div class="prose prose-sky mt-12 max-w-none pb-12">
+        <h1>{{ .Title }}</h1>
+
+        <hr>
+
+        {{ range (where .Site.RegularPages "Section" "posts").GroupByDate "2006" }}
+            <h2>{{ .Key }}</h2>
+
+            <ul>
+                {{ range .Pages }}
+                    <li>
+                        <div class="flex m-0">
+                            <span class="w-16 shrink-0 text-neutral-600">{{ .Date.Format "Jan 2" }}</span>
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </div>
+                    </li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    </div>
+</main>
+{{ end }}
