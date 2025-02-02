@@ -4,6 +4,8 @@ tags: [html, javascript]
 date: 2024-08-24 19:30:00 +0700
 images:
 - /images/posts/textarea-grow-height/thumbnail.jpg
+popular: true
+popularOrder: 5
 ---
 
 Pada beberapa aplikasi seperti aplikasi chatting, tinggi input pesan biasanya mengikuti jumlah baris kontennya. Ini bisa dilakukan dengan textarea dan javascript.

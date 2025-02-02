@@ -2,6 +2,8 @@
 title: Class Validator Dependency Injection di Nest Js
 tags: [nest]
 date: 2023-09-06 03:00:00 +0700
+popular: true
+popularOrder: 2
 ---
 
 Pada saat menggunakan class validator dengan nest, terkadang saya membutuhkan dependency injection dari module / service lain.

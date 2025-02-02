@@ -5,7 +5,7 @@ date: 2024-12-18 15:15:00 +0700
 images:
 - /images/posts/laravel-chunk-by-id/thumbnail.jpg
 popular: true
-popularOrder: 5
+popularOrder: 4
 ---
 
 `chunkById` di laravel adalah metode yang dapat digunakan untuk memuat data berukuran besar dari database secara efisien.
