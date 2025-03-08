@@ -2,6 +2,8 @@
 title: Melihat Query SQL Yang Dieksekusi Laravel
 tags: [laravel]
 date: 2023-10-15 13:00:00 +0700
+popular: true
+popularOrder: 4
 ---
 
 Melihat query database yang dieksekusi dapat membantu banyak hal, contohnya membantu debugging.

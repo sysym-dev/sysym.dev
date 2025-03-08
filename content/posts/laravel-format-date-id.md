@@ -4,6 +4,8 @@ tags: [laravel]
 date: 2024-12-04 18:30:00 +0700
 images:
 - /images/posts/laravel-format-date-id/thumbnail.jpg
+popular: true
+popularOrder: 1
 ---
 
 Kali ini saya akan membahas cara format tanggal ke Bahasa Indonesia di Laravel.

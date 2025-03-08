@@ -4,6 +4,8 @@ tags: [linux]
 date: 2025-01-11 19:38:00 +0700
 images:
 - /images/posts/linux-scrcpy/thumbnail.jpg
+popular: true
+popularOrder: 5
 ---
 
 Scrcpy adalah aplikasi yang dapat digunakan untuk menampilkan layar Android ke PC atau Laptop. Untungnya, scrcpy dapat diinstal di Linux.

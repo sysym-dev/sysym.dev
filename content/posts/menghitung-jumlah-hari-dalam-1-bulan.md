@@ -2,6 +2,8 @@
 title: Menghitung Jumlah Hari Dalam 1 Bulan Dengan Javascript
 tags: [javascript]
 date: 2023-12-03 10:00:00 +0700
+popular: true
+popularOrder: 3
 ---
 
 Jumlah hari dalam 1 bulan dapat dihitung di javascript dengan `Date` objek.

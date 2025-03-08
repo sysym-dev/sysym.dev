@@ -4,6 +4,8 @@ tags: [javascript]
 date: 2025-02-05 19:27:00 +0700
 images:
 - /images/posts/js-compare-array/thumbnail.jpg
+popular: true
+popularOrder: 6
 ---
 
 Pada artikel kali ini akan dibahas cara membandingkan dua array apakah sama di javascript.
