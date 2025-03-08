@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $paginator := (.Paginate .RegularPages 5) }}
-<main class="max-w-prose mx-auto px-4 md:px-0 {{ if gt $paginator.TotalPages 1 }} pb-12 {{ end }}">
+<main class="max-w-prose mx-auto px-4 md:px-0 pb-12">
     <div class="prose prose-sky mt-12 max-w-none">
         <h1>{{ .Title }}</h1>
         <hr>
